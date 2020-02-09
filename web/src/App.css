@@ -1,0 +1,26 @@
+#app {
+  max-width: 1200px; /*largura alta para que mesmo em telas grandes seja centralizado*/
+  margin: 0 auto;/*centraliza as informacoes (0 = Top, Bot; auto = Left, Right)*/
+  padding: 60px 30px;
+  
+  display: flex;
+  flex-direction: row; /*apresenta um conteudo ao lado do outro em linha*/
+  align-items: flex-start;/*alinha os elementos sempre ao topo*/
+}
+
+#app main {
+  margin-left: 30px;
+}
+
+@media (max-width: 990px) {
+  #app {
+    flex-direction: column;    
+  }
+  #app main {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  #app aside {
+    width: 100%;
+  }
+}

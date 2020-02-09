@@ -1,0 +1,19 @@
+main {
+  /*propriedade para que todo o conteudo da Tag ocupe todo o espaco*/
+  /*usar caso a tag pai tenha: */ /*flex-direction: row*/  
+  flex: 1;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;/*distancia entre colunas e linhas*/
+  list-style: none;
+}
+
+@media (max-width: 650px) {
+/*configuracao para apresentar somente uma coluna para resolução menor que 650px*/  
+main ul {
+    grid-template-columns: 1fr;
+  }
+}
